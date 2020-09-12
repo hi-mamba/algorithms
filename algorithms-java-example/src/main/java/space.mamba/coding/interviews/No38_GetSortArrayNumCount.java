@@ -1,6 +1,5 @@
 package space.mamba.coding.interviews;
 
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
