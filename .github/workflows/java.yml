@@ -18,7 +18,5 @@ jobs:
         with:
           java-version: 11
         id: java
-      - name: ls ../
-        run: ls ../
       - name: Build with maven
-        run: mvn -B package --file pom.xml
+        run: mvn test
