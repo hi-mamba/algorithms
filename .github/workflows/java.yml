@@ -1,0 +1,24 @@
+name: Java CI     #Actions名称
+
+on:
+  push:
+    branches:
+      - master # 只在master上push触发
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Unit Testing # java test
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1  #使用官方脚本创建java环境
+        with:
+          java-version: 11
+        id: java
+      - name: ls ../
+        run: ls ../
+      - name: Build with maven
+        run: mvn -B package --file pom.xml
