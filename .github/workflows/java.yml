@@ -18,8 +18,8 @@ jobs:
         with:
           java-version: 11
         id: java
-      - name: Build with maven
-        run: mvn test --file pom.xml
+     # - name: Build with maven
+     #   run: mvn test --file pom.xml # 这里的配置有问题
       - name: Run maven script
         uses: xlui/action-maven-cli/jdk11@master
         id: test
