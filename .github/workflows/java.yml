@@ -19,4 +19,5 @@ jobs:
           java-version: 11
         id: java
       - name: Build with maven
-        run: mvn test ./...
+        run: mvn test --file pom.xml
+
