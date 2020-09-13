@@ -20,4 +20,9 @@ jobs:
         id: java
       - name: Build with maven
         run: mvn test --file pom.xml
+      - name: Run maven script
+        uses: xlui/action-maven-cli/jdk11@master
+        id: test
+        with:
+          lifecycle: 'clean package test'
 
