@@ -20,5 +20,11 @@ jobs:
       uses: actions/setup-java@v1 #使用官方脚本创建java环境
       with:
         java-version: 13
-    - name: Build with Maven
+    - name: Cache Maven packages
+      uses: actions/cache@v2
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2
+    - name: test with Maven
       run: mvn test --file pom.xml

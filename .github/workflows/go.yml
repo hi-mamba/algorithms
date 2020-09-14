@@ -1,4 +1,4 @@
-name: GitHub Actions CI CD
+name:  Go CI with Lint and test  #Actions名称
 on:
   push:
     branches:
