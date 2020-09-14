@@ -18,6 +18,10 @@ jobs:
         with:
           java-version: 11
         id: java
+      - name: Debug only
+          shell: bash
+          run: |
+            pwd && ls -lhaR
       - name: Cache Maven packages
         uses: actions/cache@v2
         with:
