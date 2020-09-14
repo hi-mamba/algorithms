@@ -1,4 +1,5 @@
-[![Github Build Status](https://github.com/hi-mamba/algorithms/workflows/maven/badge.svg)
+
+[![Github Build Status](https://github.com/hi-mamba//algorithms/workflows/maven/badge.svg?branch=master)](https://github.com/hi-mamba/algorithms/actions?query=workflow%3Amaven+branch%3Amaster)
 
 # algorithms
 
