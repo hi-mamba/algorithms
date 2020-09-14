@@ -1,5 +1,4 @@
-![algorithms](https://github.com/hi-mamba/algorithms/workflows/maven.yml/badge.svg)
-
+[![Github Build Status](https://github.com/hi-mamba/algorithms/workflows/maven/badge.svg)
 
 # algorithms
 
