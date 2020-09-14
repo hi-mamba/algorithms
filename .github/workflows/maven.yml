@@ -18,11 +18,12 @@ jobs:
         with:
           java-version: 11
         id: java
-     # - name: Build with maven
-     #   run: mvn test --file pom.xml # 这里的配置有问题
-      - name: Run maven script
-        uses: xlui/action-maven-cli/jdk11@master
-        id: test
+      - name: Cache Maven packages
+        uses: actions/cache@v2
         with:
-          lifecycle: 'clean package test'
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
 
