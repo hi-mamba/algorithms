@@ -15,7 +15,9 @@ public class No121_Best_Time_to_Buy_and_Sell_Stock {
         int[] arr = {7,1,5,3,6,4};
         int value = obj.maxProfit(arr);
         System.out.println(value);
+        System.out.println(obj.maxProfit2(arr));
 
+        System.out.println("### ");
         int[] arr2 = {7,6,4,3,1};
         int value2 = obj.maxProfit(arr2);
         System.out.println(value2);
@@ -41,5 +43,39 @@ public class No121_Best_Time_to_Buy_and_Sell_Stock {
             }
         }
         return bestTimeSellStock;
+    }
+
+    /**
+     * 优化后
+     * 时间复杂度 O(n)
+     * */
+    public int maxProfit2(int[] prices) {
+        //不进行任何交易，即最大利益为0
+        int bestTimeSellStock = 0;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] < min) {
+                min = prices[i];
+            }
+            if (min < prices[i] && bestTimeSellStock < prices[i] - min) {
+                bestTimeSellStock = prices[i] - min;
+            }
+        }
+        return bestTimeSellStock;
+    }
+
+    /**
+     * 优化后
+     * */
+    public int maxProfit3(int[] prices) {
+        //不进行任何交易，即最大利益为0
+        int res = 0, buy = Integer.MAX_VALUE;
+        for (int price : prices) {
+            //谁小买谁
+            buy = Math.min(buy, price);
+            //查看价格比较,取最大
+            res = Math.max(res,price - buy);
+        }
+        return res;
     }
 }
