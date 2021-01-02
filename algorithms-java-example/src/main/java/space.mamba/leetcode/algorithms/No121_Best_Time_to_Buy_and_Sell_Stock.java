@@ -5,6 +5,12 @@ package space.mamba.leetcode.algorithms;
  * @date 2021/1/1 18:39
  * <p>
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+ *
+ * 只需要遍历一次数组，用一个变量记录遍历过数中的最小值，然后每次计算当前值和这个最小值之间的差值最为利润，
+ * 然后每次选较大的利润来更新。当遍历完成后当前利润即为所求
+ *
+ * 马后炮
+ *
  * <p>
  * 滑动窗口
  */
@@ -66,6 +72,7 @@ public class No121_Best_Time_to_Buy_and_Sell_Stock {
 
     /**
      * 优化后
+     * https://www.cnblogs.com/grandyang/p/4280131.html
      * */
     public int maxProfit3(int[] prices) {
         //不进行任何交易，即最大利益为0
