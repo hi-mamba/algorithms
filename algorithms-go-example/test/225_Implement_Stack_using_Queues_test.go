@@ -19,9 +19,9 @@ func TestPush(t *testing.T)  {
 	if obj.Pop() != 3 {
 		t.Error("Pop() ne 3")
 	}
-	//if obj.Pop() != 2 {
-	//	t.Error("Pop() ne 2")
-	//}
+	if obj.Pop() != 2 {
+		t.Error("Pop() ne 2")
+	}
 
 }
 

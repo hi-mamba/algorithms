@@ -12,9 +12,9 @@ func Constructor() MyStack {
 
 func (this *MyStack) Push(x int) {
 	this.q_temp = append(this.q_temp, x)
-	for i := range this.q_main {
-		this.q_temp = append(this.q_temp,this.q_temp[0])
-		this.q_main = this.q_main[i:]
+	for _ = range this.q_main {
+		this.q_temp = append(this.q_temp,this.q_main[0])
+		this.q_main = this.q_main[1:]
 
 	}
 	for len(this.q_temp) > 0 {
