@@ -35,6 +35,7 @@ class MyQueue {
         tempStack.add(x);
         tempStack.addAll(stack);
         stack = tempStack;
+
     }
 
     /** Removes the element from in front of queue and returns that element. */
