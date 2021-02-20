@@ -14,6 +14,10 @@ public class TreeNode {
     TreeNode left;
     TreeNode right;
 
+    TreeNode() {
+    }
+
+
     TreeNode(int x) {
         val = x;
     }
