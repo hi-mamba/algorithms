@@ -61,4 +61,18 @@ public class TreeNode {
         root.right.right = new TreeNode(7);
         return root;
     }
+
+    //将二叉树先序遍历，用于测试结果
+    public static void preTraverseBinTree(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        System.out.print(node.val + ",");
+        if (node.left != null) {
+            preTraverseBinTree(node.left);
+        }
+        if (node.right != null) {
+            preTraverseBinTree(node.right);
+        }
+    }
 }
