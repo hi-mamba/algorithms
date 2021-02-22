@@ -62,6 +62,21 @@ public class TreeNode {
         return root;
     }
 
+
+    public static TreeNode initTreeNode3() {
+        //   3
+        //  / \
+        // 1   4
+        //  \
+        //   2
+        //
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(4);
+        root.left.right = new TreeNode(2);
+        return root;
+    }
+
     //将二叉树先序遍历，用于测试结果
     public static void preTraverseBinTree(TreeNode node) {
         if (node == null) {
