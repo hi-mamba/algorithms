@@ -1,6 +1,10 @@
 package space.mamba.coding.interviews;
 
 
+import org.junit.jupiter.api.Assertions;
+
+import java.util.Stack;
+
 /**
  * @author mamba
  *
@@ -14,6 +18,9 @@ public class No63BinarySearchTreeKNode {
         No63BinarySearchTreeKNode obj = new No63BinarySearchTreeKNode();
         TreeNode kTreeNode = obj.kthLargest(TreeNode.initTreeNode3(), 3);
         System.out.println(kTreeNode.val);
+        int kTreeNode2 = obj.kthLargest2(TreeNode.initTreeNode3(), 3);
+        Assertions.assertEquals(kTreeNode2,2);
+
     }
 
     TreeNode res = null;
@@ -31,4 +38,27 @@ public class No63BinarySearchTreeKNode {
         }
         return res;
     }
+
+    // https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/solution/javaji-bai-100de-xiang-xi-jie-da-di-gui-he-die-dai/
+
+    public int kthLargest2(TreeNode root, int k) {
+        int count = 1;
+        Stack<TreeNode> stack = new Stack<>();
+        while (root != null || !stack.isEmpty()) {
+            while (root != null) {
+                stack.push(root);
+                //根据 搜索二叉树特点，先遍历右边，因为右边总比左边大
+                root = root.right;
+            }
+            TreeNode pop = stack.pop();
+            if (count == k) {
+                return pop.val;
+            }
+            count++;
+            root = pop.left;
+        }
+        return 0;
+
+    }
+
 }
