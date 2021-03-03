@@ -15,33 +15,33 @@
 
 - 1、赋值运算函数
 
-  - [例子](/algorithms-demo/src/main/java/space/pankui/coding/interviews/AssignmentOperatorFunctionDemo01.java)
+  - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/AssignmentOperatorFunctionDemo01.java)
 
 - 2、单例设计模式
  
-  - [例子](/algorithms-demo/src/main/java/space/pankui/coding/interviews/SingletonDemo02.java)     
+  - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/SingletonDemo02.java)     
 
 - 3、二维数组中查找目标值（二维数组中的查找）
 
-  - [例子](/algorithms-demo/src/main/java/space/pankui/coding/interviews/P44_FindInPartiallySortedMatrix.java)
+  - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/P44_FindInPartiallySortedMatrix.java)
 
 - 4、替换字符串中的空格
 
-    - [例子](/algorithms-demo/src/main/java/space/pankui/coding/interviews/DeleteWhitespace.java)
+    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/DeleteWhitespace.java)
 
 - 5、从尾到头打印链表
      
-    - [例子](/algorithms-demo/src/main/java/space/pankui/coding/interviews/P58_PrintListInReversedOrder.java)
+    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/P58_PrintListInReversedOrder.java)
 
 - 6、由前序和中序遍历重建二叉树
-    - [例子](/algorithms-demo/src/main/java/space/pankui/coding/interviews/BinaryTreeNode.java)
+    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/BinaryTreeNode.java)
 
 - 7、用两个栈实现队列
-    - [例子](/algorithms-demo/src/main/java/space/pankui/coding/interviews/No7QueueWithTwoStacks.java)
+    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/No7QueueWithTwoStacks.java)
 
-- 8、求旋转数组的最小数字
-    - [例子](/algorithms-demo/src/main/java/space/pankui/coding/interviews/RotateSmallestNumberOfArrays.java)
-    - [例子](/algorithms-demo/src/main/java/space/pankui/coding/interviews/MinNumberInRotateArray.java)
+- [8、求旋转数组的最小数字](08、求旋转数组的最小数字.md)
+    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/RotateSmallestNumberOfArrays.java)
+    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/MinNumberInRotateArray.java)
 
 
 - 9、斐波那契数列的第n项（青蛙跳台阶）

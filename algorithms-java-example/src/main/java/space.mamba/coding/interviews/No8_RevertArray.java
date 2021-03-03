@@ -10,7 +10,7 @@ public class No8_RevertArray {
 
     public static void main(String[] args) {
         No8_RevertArray obj = new No8_RevertArray();
-        int[] arr = {3, 4, 5, 2, 3};
+        int[] arr = {3, 4, 5, 1,2, 3};
         int result = obj.minArray(arr);
         System.out.println(result);
 
@@ -23,7 +23,8 @@ public class No8_RevertArray {
         int low = 0;
         int high = numbers.length - 1;
         while (low < high) {
-            int mid = (low + high) / 2;
+            // 两个 int 相加可以能溢出
+            int mid = low + (high - low) / 2;
             if (numbers[mid] > numbers[high]) {
                 low = mid + 1;
             } else if (numbers[mid] < numbers[high]) {
