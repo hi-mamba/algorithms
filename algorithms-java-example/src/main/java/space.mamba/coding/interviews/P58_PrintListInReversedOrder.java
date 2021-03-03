@@ -65,8 +65,6 @@ public class P58_PrintListInReversedOrder {
         }
 
     }
-
-
 }
 
 class Node<T> {

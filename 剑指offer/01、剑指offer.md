@@ -29,28 +29,20 @@
 
     - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/DeleteWhitespace.java)
 
-- 5、从尾到头打印链表
+- 5、[从尾到头打印链表](05、从尾到头打印链表.md)
      
-    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/P58_PrintListInReversedOrder.java)
-
-- 6、由前序和中序遍历重建二叉树
+- 6、[由前序和中序遍历重建二叉树]()
     - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/BinaryTreeNode.java)
 
-- 7、用两个栈实现队列
-    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/No7QueueWithTwoStacks.java)
+- 7、[用两个栈实现队列](07、用两个栈实现队列.md)
 
-- [8、求旋转数组的最小数字](08、求旋转数组的最小数字.md)
-    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/RotateSmallestNumberOfArrays.java)
-    - [例子](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/MinNumberInRotateArray.java)
+- 8、[求旋转数组的最小数字](08、求旋转数组的最小数字.md)
 
+- 9、[斐波那契数列的第n项（青蛙跳台阶）](09、斐波那契数列的第n项（青蛙跳台阶）.md)
 
-- 9、斐波那契数列的第n项（青蛙跳台阶）
-    - [例子](/剑指offer/09、斐波那契数列的第n项（青蛙跳台阶）.md)
+- 10、[二进制中1的个数](10、求二进制数中1的个数.md)
 
-- 10、二进制中1的个数
-    - [例子](/剑指offer/10、求二进制数中1的个数.md)
-
-- 11、[数值的整数次方](/剑指offer/11、数值的整数次方.md)
+- 11、[数值的整数次方](11、数值的整数次方.md)
 
 - 12、[打印1到最大的n位数](12、打印1到最大的n位数.md)
 
