@@ -41,7 +41,7 @@ We%20Are%20Happy。
 
 实现：
 
-[LongestCommonPrefixDemo](../algorithms-demo/src/main/java/space/pankui/string/ReplaceSpace.java)
+[LongestCommonPrefixDemo](../algorithms-java-example/src/main/java/space.mamba/string/ReplaceSpace.java)
 
 
 ## 最长公共前缀
@@ -58,7 +58,7 @@ Leetcode: 编写一个函数来查找字符串数组中的最长公共前缀。�
 
 实现：
 
-[LongestCommonPrefixDemo](../algorithms-demo/src/main/java/space/pankui/string/LongestCommonPrefixDemo.java)
+[LongestCommonPrefixDemo](../algorithms-java-example/src/main/java/space.mamba/string/LongestCommonPrefixDemo.java)
 
 参考：<https://blog.csdn.net/Lynn_Baby/article/details/80596410>
 

@@ -9,7 +9,7 @@
 
 ![](../images/interview/1_1.png)
 
-- [点击我看例子](/algorithms-demo/src/main/java/space/pankui/interview/ClockwiseOutput.java)  
+- [点击我看例子](/algorithms-java-example/src/main/java/space.mamba/interview/ClockwiseOutput.java)  
  
 
 ## 题目二：

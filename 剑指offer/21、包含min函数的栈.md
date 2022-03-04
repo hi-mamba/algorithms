@@ -16,7 +16,6 @@
 
 -  4、访问栈顶元素用peek方法，而不是top方法
 
-- [例子代码](/algorithms-demo/src/main/java/space/pankui/coding/interviews/No21_StackMin.java)
+- [例子代码](/algorithms-java-example/src/main/java/space.mamba/coding/interviews/No21_StackMin.java)
 
- 
  
